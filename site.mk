@@ -1,22 +1,20 @@
 GLUON_SITE_PACKAGES := \
-	gluon-mesh-batman-adv-15 \
-	gluon-alfred \
 	gluon-respondd \
 	gluon-autoupdater \
-	gluon-config-mode-core \
 	gluon-config-mode-autoupdater \
+	gluon-config-mode-contact-info \
+	gluon-config-mode-core \
+	gluon-config-mode-geo-location \
 	gluon-config-mode-hostname \
 	gluon-config-mode-mesh-vpn \
-	gluon-config-mode-geo-location \
-	gluon-config-mode-contact-info \
 	gluon-ebtables-filter-multicast \
 	gluon-ebtables-filter-ra-dhcp \
-	gluon-luci-admin \
-	gluon-luci-autoupdater \
-	gluon-luci-portconfig \
-	gluon-luci-wifi-config \
-	gluon-luci-private-wifi \
-	gluon-next-node \
+	gluon-web-admin \
+	gluon-web-autoupdater \
+	gluon-web-network \
+	gluon-web-wifi-config \
+	gluon-web-private-wifi \
+	gluon-mesh-batman-adv-15 \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
 	gluon-setup-mode \
@@ -27,9 +25,10 @@ GLUON_SITE_PACKAGES := \
 	gluon-ebtables-filter-arp-ffmuc \
 	gluon-ebtables-filter-multicast-ffmuc \
 	gluon-ssid-changer \
-	respondd-module-airtime 
-#	tecff-ath9k-broken-wifi-workaround
-#	gluon-config-mode-site-select 
+	respondd-module-airtime \
+	tecff-ath9k-broken-wifi-workaround
+#	tecff-respondd-watchdog
+#	gluon-config-mode-site-select
 
 # basic support for USB stack
 USB_PACKAGES_BASIC := \
