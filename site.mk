@@ -80,21 +80,11 @@ USB_PACKAGES_NET := \
 	kmod-usb-net-pegasus \
 	kmod-usb-net-qmi-wwan \
 	kmod-usb-net-rndis \
-	kmod-usb-net-rtl8152 \
 	kmod-usb-net-sierrawireless \
 	kmod-usb-net-smsc95xx
 # broken
 #	kmod-usb-net-rtl8150 \
-# additional USB network devices (ie Edimax)
-USB_PACKAGES_NET_ADD := \
-	kmod-rtl8192cu \
-	kmod-rtl8187 \
-	kmod-ath9k-htc  \
-	kmod-ath9k-common \
-	kmod-ath \
-	kmod-rt73-usb \
-	kmod-carl9170 \
-	kmod-brcmfmac
+#	kmod-usb-net-rtl8152 \
 
 # network support for PCI devices
 PCI_PACKAGES_NET := \
@@ -115,6 +105,7 @@ PCI_PACKAGES_NET := \
 # broken
 #	kmod-ixgbe \
 #	kmod-r8139too \
+
 # additional packages
 TOOLS_PACKAGES := \
 	iperf \
@@ -140,8 +131,7 @@ GLUON_SITE_PACKAGES += \
 	$(USB_PACKAGES_STORAGE) \
 	$(USB_PACKAGES_NET) \
 	$(PCI_PACKAGES_NET) \
-	$(TOOLS_PACKAGES) \
-	$(USB_PACKAGES_NET_ADD)
+	$(TOOLS_PACKAGES)
 endif
 
 # x86-64
@@ -155,8 +145,7 @@ GLUON_SITE_PACKAGES += \
 	$(USB_PACKAGES_STORAGE) \
 	$(USB_PACKAGES_NET) \
 	$(PCI_PACKAGES_NET) \
-	$(TOOLS_PACKAGES) \
-	$(USB_PACKAGES_NET_ADD)
+	$(TOOLS_PACKAGES)
 endif
 
 # Raspberry Pi A/B/B+
@@ -167,8 +156,7 @@ GLUON_SITE_PACKAGES += \
 	$(USB_PACKAGES_BASIC) \
 	$(USB_PACKAGES_STORAGE) \
 	$(USB_PACKAGES_NET) \
-	$(TOOLS_PACKAGES) \
-	$(USB_PACKAGES_NET_ADD)
+	$(TOOLS_PACKAGES)
 endif
 
 # Raspberry Pi 2
@@ -179,8 +167,7 @@ GLUON_SITE_PACKAGES += \
 	$(USB_PACKAGES_BASIC) \
 	$(USB_PACKAGES_STORAGE) \
 	$(USB_PACKAGES_NET) \
-	$(TOOLS_PACKAGES) \
-	$(USB_PACKAGES_NET_ADD)
+	$(TOOLS_PACKAGES)
 endif
 
 # ar71xx-generic
